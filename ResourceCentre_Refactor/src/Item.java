@@ -14,7 +14,7 @@ public class Item {
 	public String toString() {
 		
 		// Write your codes here
-		return null;
+		return String.format("%-10s %-30s %-10s %-10s\n", getAssetTag(),getDescription(),getIsAvailable(),getDueDate());
 	}
 	public String getAssetTag() {
 		return assetTag;
@@ -39,5 +39,6 @@ public class Item {
 	public void setIsAvailable(boolean isAvailable) {
 		this.isAvailable = isAvailable;
 	}
+
 }
 
